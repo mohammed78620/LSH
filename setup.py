@@ -13,7 +13,7 @@ MAINTAINER_EMAIL = 'matti.lyra@gmail.com'
 URL = 'https://github.com/mattilyra/lsh'
 DOWNLOAD_URL = 'https://github.com/mattilyra/lsh'
 
-VERSION = '0.3.1'
+VERSION = '0.3.2'
 
 ext = '.pyx' if USE_CYTHON else '.cpp'
 try:

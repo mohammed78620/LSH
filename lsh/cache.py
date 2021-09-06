@@ -85,7 +85,7 @@ class Cache(object):
         for i in doc_ids:
             self.remove_id(i)
 
-    def get_all_duplicates(self, min_jaccard=0.8):
+    def get_all_duplicates(self, min_jaccard=0.9):
         candidate_pairs = set()
         for b in self.bins:
             for bucket_id in b:
@@ -97,7 +97,7 @@ class Cache(object):
 
         return self.filter_candidates(candidate_pairs, min_jaccard)
 
-    def get_duplicates_of(self, doc=None, doc_id=None, min_jaccard=0.8):
+    def get_duplicates_of(self, doc=None, doc_id=None, min_jaccard=0.9):
         if doc_id is not None and doc_id in self.fingerprints:
             fingerprint = self.fingerprints[doc_id]
         elif doc is not None:

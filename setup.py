@@ -14,7 +14,7 @@ MAINTAINER_EMAIL = 'matti.lyra@gmail.com'
 URL = 'https://github.com/mattilyra/lsh'
 DOWNLOAD_URL = 'https://github.com/mattilyra/lsh'
 
-VERSION = '0.3.0'
+VERSION = '0.3.1'
 
 ext = '.pyx' if USE_CYTHON else '.cpp'
 extensions = [Extension("lsh.cMinhash",
@@ -23,7 +23,7 @@ extensions = [Extension("lsh.cMinhash",
 if USE_CYTHON:
     from Cython.Build import cythonize
 
-    extensions = cythonize(extensions)
+    extensions = cythonize(extensions, force=True)
 
 install_deps = ['numpy', 'cython>=0.24.1']
 test_deps = ['coverage>=4.0.3', 'pytest>=3.0', ]

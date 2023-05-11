@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "lsh"
+version = "0.1.0"
+description = ""
+authors = ["Mohammed Akmal Miah <mohammedmiah67890@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

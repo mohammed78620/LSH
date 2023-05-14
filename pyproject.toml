@@ -16,7 +16,7 @@ pytest = "^7.3.1"
 
 
 [tool.poetry.build]
-generate-setup-file = false
+generate-setup-file = true
 script = 'build.py'
 
 [build-system]

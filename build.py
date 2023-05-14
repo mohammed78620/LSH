@@ -26,3 +26,11 @@ for output in cmd.get_outputs():
     relative_extension = os.path.relpath(output, cmd.build_lib)
     print(relative_extension)
     shutil.copyfile(output, relative_extension)
+
+def build(setup_kwargs):
+    """Needed for the poetry building interface."""
+
+    setup_kwargs.update({
+        'ext_modules' : ext_modules,
+        'include_dirs' : [np.get_include()],
+    })

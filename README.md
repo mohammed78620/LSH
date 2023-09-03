@@ -26,3 +26,13 @@ installation
 > cd LSH
 > python setup.py install
 ```
+
+## Usage
+add line to poetry project
+```
+lsh = {git = "https://github.com/mohammed78620/LSH.git", rev = "master"}
+```
+or run to install directly
+```
+pip install git+ssh://git@github.com:mohammed78620/LSH.git@master
+```

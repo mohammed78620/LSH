@@ -11,7 +11,7 @@ include = [{ path = "lsh/**/*.so", format = "wheel" }]
 [tool.poetry.dependencies]
 python = "^3.10"
 cython = "^0.29.34"
-numpy = "^1.24.3"
+numpy = "^2.1.0"
 
 
 [tool.poetry.group.dev.dependencies]
